@@ -8,12 +8,6 @@
         <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap" rel="stylesheet">
        
         <style>
-        .Recipes{
-            background-color: rgb(242,3,26,255);
-            opacity: 0.8;
-            color: rgba(255,255,255,1);
-            border-radius: 6px;
-        }
         
         body {
             margin: 0;
@@ -22,7 +16,7 @@
         }
        
         .topNav {
-         background: rgba(242,3,26,1);
+         background: rgba(0,112,185,255);
          position: fixed; 
          width: 100%;
          overflow: hidden;
@@ -30,24 +24,28 @@
         }
  
         .Space {
-            margin: 7px;
-            padding: 10px;
+            margin: 25px;
         }
         
         .Sources { 
             text-align: center;
         }
        
-        
+        #HeaderText {
+         color: rgba(0,0,0,1);
+        }
+
         .header {
-          padding: 120px;
+          padding: 150px;
           text-align: center;
           margin: 0;
-          background-image: url("https://www.gannett-cdn.com/presto/2019/01/30/PBRE/34426696-2ae2-49d3-8edd-77f9c1413d59-SportSq_04_rev2.jpg");
-          background-position: center;
+          background-image: url("https://www.cruiseoffers.com.au/media/1588/costa-cruises-cruise-offers1-thumb.jpg");
+          background-position: bottom;
           background-size: 100%;
           opacity: 1;
-          /* background-image: linear-gradient(to right, rgba(8, 207, 91,1), rgba(110, 222, 104,1)); */ }
+          /* filter: blur(2px); */
+          /* background-image: linear-gradient(to right, rgba(8, 207, 91,1), rgba(110, 222, 104,1)); */ 
+         }
     
         .footer {
           padding: 29px;
@@ -64,7 +62,7 @@
          }
     
         .button {
-          background-color: rgba(242,3,26,255); 
+          background-color: rgba(0,112,185,255); 
           border: none;
           border-radius: 0px;
           color: white;
@@ -74,14 +72,14 @@
           display: inline-block;
           font-weight: bold;
           font-size: 16px;
-          margin: 0px -2px;
+          margin: 0px 0px;
           cursor: pointer;
           -webkit-transition-duration: 0.4s; /* Safari */
           transition-duration: 0.4s;
         }
                	
         .ButtonDisabled {
-          background-color: rgba(247,104,118,255); 
+          background-color: rgba(102,169,213,255); 
           border: none;
           border-radius: 0px;
           opacity: 1;
@@ -102,18 +100,32 @@
         margin: 2px;
         top: 0;
         }
+
+        .Center {
+         text-align: center;
+         padding: 25px;
+        }
         
         
         .ButtonDisabled:hover {
             cursor: not-allowed;
         }
         
+        .ButtonBig {
+         padding: 10%;
+         margin: 0 auto; 
+         width: 33%; 
+        }
+
         .button:hover {
             opacity: .8;
             box-shadow: 0 0px 25px 0 rgba(0, 0, 0,.2),0 5px 0px 0
         }
         
-        
+        .ButtonCenter {
+         justify-content: center;
+        }
+
         #FontColorWhite {
             color: rgba(255,255,255,1);
             text-align: center;
@@ -121,14 +133,21 @@
             opacity: 0.9;
             font-weight: bold;
         }
-        
+
+        #FontColorBlack {
+            color: rgba(5,5,5,1);
+            text-align: center;
+            background: rgba(58, 161, 60);
+            opacity: 0.9;
+            font-weight: bold;
+        }
+
         h2 {
-            color: rgba(245,53,72,255);
+            color: rgba(0,112,185,255);
         }
         h1 {
             color: rgb(255, 255, 255);
             font-size: 42px;
-          
         }
         
         a {
@@ -145,7 +164,7 @@
         <a href="#HomeworkPackets"><button class="button">Homework Packets</button></a>
         <a href="#Other"><button class="button">Other</button></a>
 </div>       
-<div class="header"><div class="FontColorWhite"><h1 id="BeginingOfPage">Administrator Panel</h1></div></div>
+<div class="header"><div class="FontColorBlack"><h1 id="BeginingOfPage">Management Portal</h1></div></div>
 
 
         
@@ -153,59 +172,17 @@
 
 
 <!-- Textbooks -->
-        
-        <h2 id="Textbooks">Textbooks</h2>
-        
-        <p>All textbooks are to stay confidencial until they are released publicly to the program.<br><br></p> 
-    
+           <br>
+           <h2 id="Textbooks">Get Started</h2>
+           <p>Select a button to begin. <br><br></p> 
 
-<a href="https://docs.google.com/document/d/1SN7z5-Q8-6XCeJWJD_r3RsE3YmPIjr9y-L1wbLPXV4w/edit?usp=sharing" target="_blank"><button class="button round">Stage One</button></a>
-<button class="button round ButtonDisabled">Stage Two</button>
-<button class="button round ButtonDisabled">Stage Three</button>
-
-
-
-<!-- Guides -->
-        <br><br><br><br>
-        <h2 id="LectureGuides">Lecture Guides</h2>
-        
-        <p>Use these guides when hosting lecutres, especially in game. These will have more details than the normal textbook, therefore it is important to teach your interns off these guides. <br><br></p> 
-    
-
-<a href="https://docs.google.com/document/d/1FIOSycN26x-Wesvb8A87Y7IcT6DDzm_8bBnH9Z1KoXY/edit?usp=sharing" target="_blank"><button class="button round">Stage One</button></a>
-<button class="button round ButtonDisabled">Stage Two</button>
-<button class="button round ButtonDisabled">Stage Three</button>
+<div class="ButtonCenter">
+<a href="https://docs.google.com/document/d/1SN7z5-Q8-6XCeJWJD_r3RsE3YmPIjr9y-L1wbLPXV4w/edit?usp=sharing" target="_blank"><button class="button round">Music Ids</button></a>
+<button class="button round ButtonDisabled">Insert Ids</button>
+<button class="button round ButtonDisabled">Italian Statements</button>
+</div>
 
 
-
-
-
-
-
-
-<!-- Homeowork Packets -->
-
-        <br><br><br><br>
-        
-        <h2 id="HomeworkPackets">Homework Packets</h2>
-        
-        <p>Below are the homework packets that will be used throughout the course of this program. <br><br><i>*All homework packets are graded by Program Heads.</i>
-        </p>
-<a href="https://docs.google.com/document/d/1MRQOvYVAcS9N__I9dt4lbujZZyh-YOUEqsru59OImgs/edit?usp=sharing" target="_blank"><button class="button round">Packet One</button></a>
-<button class="button round ButtonDisabled">Packet Two</button>
-<button class="button round ButtonDisabled">Packet Three</button>   
-        
-<!-- Other -->
-
-        <br><br><br><br>
-        
-        <h2 id="Other">Other</h2>
-        <p>Any sheets, documents, etc that are not categorized will be labeled here.
-        </p>
-<a href="https://classroom.google.com/u/0/c/MzMzNTAwNDgwNDA0" target="_blank"><button class="button round">Classroom</button></a>
-<button class="button round ButtonDisabled">Grades</button>
-
-        
 
 
 
