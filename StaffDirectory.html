@@ -73,7 +73,11 @@
              cursor: pointer;
          }
     
-        .button {
+        
+
+       
+          
+          Button {
           background-color:#1D1D1F; 
           border: none;
           border-radius: 0px;
@@ -89,9 +93,26 @@
           -webkit-transition-duration: 0.4s; /* Safari */
           transition-duration: 0.4s;
         }
-               	
-        .ButtonDisabled {
-          background-color: rgba(242,3,26,255); 
+          
+        .Important {
+          background-color:#0071E3; 
+          border: none;
+          border-radius: 0px;
+          color: white;
+          padding: 15px 32px;
+          text-align: center;
+          text-decoration: none;
+          display: inline-block;
+          font-weight: 500;
+          font-size: 16px;
+          margin: 0px -2px;
+          cursor: pointer;
+          -webkit-transition-duration: 0.4s; /* Safari */
+          transition-duration: 0.4s;
+          }
+          
+        .Disabled {
+          background-color: #373737; 
           border: none;
           border-radius: 0px;
           opacity: 0.6;
@@ -130,15 +151,21 @@
             opacity: 0.9;
             font-weight: bold;
         }
-        
+          
+        h3 {
+            color:#1D1D1F;
+            font-weight: 500;
+            font-size: 20px;
+        }
+          
         h2 {
             color:#1D1D1F;
             font-weight: 700;
         }
+          
         h1 {
             color: rgb(255, 255, 255);
             font-size: 42px;
-          
         }
         
         a {
@@ -151,7 +178,7 @@
     <body>
 
 <div class="topNav">
-  		<a id="BeginningOfPage"><img class="CostaLogo" alt="Costa Cruises Logo" src="https://lh3.googleusercontent.com/BzUlkJtWhUypx4uQWhSq9VSjZFTjTPEDZrIWHnIbh2_w2vT-bLQR3MkyomH6I0vzESic6A2sFu3r0E-EWzx8vvmOxQIFFwawph_MiCffpG1gRIgZmtpbHo_BQwcHf7TKnjqHEx2XnA=w2400"><alt="Costa Cruises Logo"></a>
+  		<a id="BeginingOfPage"><img class="CostaLogo" alt="Costa Cruises Logo" src="https://lh3.googleusercontent.com/BzUlkJtWhUypx4uQWhSq9VSjZFTjTPEDZrIWHnIbh2_w2vT-bLQR3MkyomH6I0vzESic6A2sFu3r0E-EWzx8vvmOxQIFFwawph_MiCffpG1gRIgZmtpbHo_BQwcHf7TKnjqHEx2XnA=w2400"><alt="Costa Cruises Logo"></a>
 </div>
       
 <div class="header"><div class="FontColorWhite">
@@ -166,34 +193,27 @@
 <div class="Space">
 
 
-<!-- Textbooks -->
+<!-- Quick Links  -->
         
-        <h2 id="Textbooks">Quick Links</h2>
-        <p>Get quick access to the most important links and avoid the searching.<br><br></p> 
+        <h2 id="QuickLinks">Quick Links</h2>
+        <p>Get quick access to the most important links and avoid the searching.</p> 
     
 
-<button class="button round">Attendance Trello</button>
+  <a href="https://trello.com/b/RqY6fvgd"><button class="button round">Attendance Trello</button></a>
 <button class="button round">Passenger Infractions</button>
 
 
 
-<!-- Guides -->
+<!-- Staff Links -->
         <br><br><br><br>
-        <h2 id="Guides">Lecture Guides</h2>
+        <h2 id="Guides">Staff Links</h2>
         
-        <p>Use these guides when hosting lecutres, especially in game. These will have more details than the normal textbook, therefore it is important to teach your interns off these guides. <br><br></p> 
+        <p>All staff-orientated links have been provided below. Links have been ranked by importance. Nevertheless, all links should be taken seriously.<br><br></p> 
     
 
-<button class="button round ButtonDisabled">Stage One</button>
-<button class="button round ButtonDisabled">Stage Two</button>
-<button class="button round ButtonDisabled">Stage Three</button>
-
-
-
-
-
-
-
+<button class="button round Disabled">Stage One</button>
+<button class="button round Disabled">Stage Two</button>
+<button class="button round Disabled">Stage Three</button>
 
 <!-- Homeowork Packets -->
 
@@ -201,21 +221,45 @@
         
         <h2 id="HomeworkPackets">Homework Packets</h2>
         
-        <p>Below are the homework packets that will be used throughout the course of this program. <br><br><i>*All homework packets are graded by Program Heads.</i>
+        <p>Below are the homework packets that will be used throughout the course of this program. <i>*All homework packets are graded by Program Heads.</i>
         </p>
-<button class="button round ButtonDisabled">Packet One</button>
-<button class="button round ButtonDisabled">Packet Two</button>
-<button class="button round ButtonDisabled">Packet Three</button>   
+<a href="https://docs.google.com/document/d/1TWFeS8o5WNLCuCcBYhZ1gEygs9dQ2zrW-7IaxV913PU/edit?usp=sharing"><button class="button round">Passenger Infractions</button></a>
+
         
-<!-- Other -->
+<!-- Ship Crew  -->
 
         <br><br><br><br>
         
-        <h2 id="Other">Other</h2>
-        <p>Any sheets, documents, etc that are not categorized will be labeled here.
+        <h3 id="Other">SHIP CREW</h2>
+        <p>The links provided below are orientated towards the Ship Crew.
         </p>
-<button class="button round ButtonDisabled">Classroom</button>
-<button class="button round ButtonDisabled">Grades</button>
+  
+<a href="https://docs.google.com/document/d/1de0LIPZiPu_6X1GQptNbKaXQ1BJIqke1pN-_ahBYgI0/edit?usp=sharing"><button class="button round Important">Department Handbook</button></a>
+<a href="https://docs.google.com/document/d/1TWFeS8o5WNLCuCcBYhZ1gEygs9dQ2zrW-7IaxV913PU/edit?usp=sharing"><button class="button round">Passenger Infractions</button></a>
+
+  
+<!-- Entertainment Team -->
+
+        <br><br><br><br>
+        
+        <h3 id="Other">ENTERTAINMENT</h2>
+        <p>The links provided below are orientated towards the Entertainment Team.
+        </p>
+  
+<a href="https://docs.google.com/document/d/1de0LIPZiPu_6X1GQptNbKaXQ1BJIqke1pN-_ahBYgI0/edit?usp=sharing"><button class="button round Important">Department Handbook</button></a>
+<a href="https://docs.google.com/document/d/1TWFeS8o5WNLCuCcBYhZ1gEygs9dQ2zrW-7IaxV913PU/edit?usp=sharing"><button class="button round">Passenger Infractions</button></a>
+
+  
+<!-- Bridge Department -->
+
+        <br><br><br><br>
+        
+        <h3 id="Other">BRIDGE</h2>
+        <p>The links provided below are orientated towards the Bridge Department.
+        </p>
+  
+<a href="https://docs.google.com/document/d/1de0LIPZiPu_6X1GQptNbKaXQ1BJIqke1pN-_ahBYgI0/edit?usp=sharing"><button class="button round Important">Department Handbook</button></a>
+<a href="https://docs.google.com/document/d/1TWFeS8o5WNLCuCcBYhZ1gEygs9dQ2zrW-7IaxV913PU/edit?usp=sharing"><button class="button round">Passenger Infractions</button></a>
 
         
 
