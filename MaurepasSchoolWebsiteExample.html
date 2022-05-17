@@ -8,7 +8,8 @@
 <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap" rel="stylesheet"> 
       
         <style>
-        
+
+/* Areas and Sections */
         body {
             margin: 0;
             padding: 0;
@@ -28,10 +29,25 @@
        
         .topNav {
          background:#02652c;
-padding: 14px;
-overflow:auto;
+         padding: 14px;
+         overflow:auto;
         }
         
+.PopUp {
+backgroundcolor: #FFFFFF;
+width: 420px;
+position: absolute;
+padding: 30px 40px;
+
+transform: translate(-50%, -50%);
+left: 50%;
+right: 50%;
+
+border-raidus: 5px
+text-align: center;
+display: none;
+}
+
         .header {
           padding: 125px;
           text-align: center;
@@ -42,6 +58,18 @@ overflow:auto;
           opacity: 1;
           font-weight: Bold;
           }
+
+        .footer {
+          padding: 15px;
+          text-align: center;
+          background: #02652c;
+          opacity: 1;
+		}
+          
+         #BeginingOfPage:hover {
+             color: White;
+             cursor: pointer;
+         }
    
    /* Images */       
           .MainLogo {
@@ -51,39 +79,26 @@ overflow:auto;
    /* Text Boxes */
           .Quote {
           font-weight: 700;
-line-height: 90%;
-text-shadow: 2px 2px 5px rgba(15,15,1, 0.3);
+          line-height: 90%;
+          text-shadow: 2px 2px 5px rgba(15,15,1, 0.3);
           }
           
           .AuthorTag {
           font-size: 15px;
           font-weight: 400;
-text-shadow: 2px 2px 5px rgba(15,15,1, 0.3);
+          text-shadow: 2px 2px 5px rgba(15,15,1, 0.3);
           }
-          
-        .footer {
-          padding: 15px;
-          text-align: center;
-          background: #02652c;
-          opacity: 1;
-		}
-          
-         #BeginingOfPage:hover {
-             
-             cursor: pointer;
-         }
     
         ul li {
-display: inline-block;
-}
+          display: inline-block;
+        }
 
        .topNavButton {
-background-color:rgba(0,0,0,0)
+          background-color:rgba(0,0,0,0)
+        }
 
-}
-
-headerButton {
-
+   /* Buttons */
+        headerButton {
           background-color:#373737; 
           color: white;
           padding: 15px 30px;
@@ -158,25 +173,17 @@ headerButton {
         }
         
        
- .headerButton:hover {
-color: #02652c;
-background-color: #FFFFFF;
+        .headerButton:hover {
+            color: #02652c;
+            background-color: #FFFFFF;
         }
 
- .button:hover {
-color: #02652c;
-background-color: #FFFFFF;
-        }
-        
-        
-        #FontColorWhite {
-            color: #1D1D1F;
-            text-align: center;
-            background: rgba(58, 161, 60);
-            opacity: 0.9;
-            font-weight: bold;
+        .button:hover {
+           color: #02652c;
+           background-color: #FFFFFF;
         }
           
+   /* General */
         h3 {
             color:#1D1D1F;
             font-weight: 500;
@@ -206,6 +213,17 @@ background-color: #FFFFFF;
     </head>
     <body>
 
+<!-- Pop-Up / Announcements  -->
+<div class="PopUp ">
+
+<h2>New Announcement</h2>
+<p>Here an announcement with a surplus amount of text can be presented, yes, big words.</p>
+<a button round>Close</a>
+
+</div>
+
+<!-- Navigation Bar  -->
+
 <div class="topNav">
 <ul>
   		
@@ -233,7 +251,7 @@ background-color: #FFFFFF;
 <div class="Space">
 
 
-<!-- Quick Links  -->
+<!-- Quick Links (TEMPLATE)  -->
         
         <h2 id="QuickLinks">Quick Links</h2>
         <p>Get quick access to the most important links and avoid the searching.</p> 
