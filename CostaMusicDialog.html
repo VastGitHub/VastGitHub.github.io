@@ -160,8 +160,14 @@ box-shadow: 0 0 15px rgba(255,0,50,.75);
         
 /* Table Configurations */  
 
+table {
+border-spacing: 15px 8px;
+}
+
 .TableHeader {
 color: rgba(255,255,255,1);
+letter-spacing: 2px;
+text-align: left;
 
 }
 
@@ -172,7 +178,7 @@ font-weight: 200;
 
 .IDBlock {
 background: rgba(50,50,50,1);
-border-radius: 5px;
+border-radius: 8px;
 border-style: solid;
 border-width: 2px;
 border-color: rgba(255,255,255,.5);
@@ -182,21 +188,24 @@ padding: 5px;
 
 .NameBlock {
 font-weight: 500;
+text-align: left;
 }
 
 .TagsBlock {
 font-weight:300;
 color: rgba(255,255,255,.75);
+text-align: left;
 }
 
 
 
 /* Text Types */  
 
-h3 {
+       h3 {
             color:#FFFFFF;
             font-weight: 500;
             font-size: 20px;
+            height: 25px;
         }
           
         h2 {
@@ -253,19 +262,19 @@ h3 {
         <br><br>
         
         <h3 class="Genre"><b>"SUNNY DAY"</b> AUDIOS</h3>
-        <p>The links provided below are orientated towards the Ship Crew.
+        <p>Upbeat, positive, tropical songs.
         </p>
 
 <table>
 
 <!-- Table Header -->
   <tr class="TableHeader">
-     <th>ID</th>
+     <th>SONG ID</th>
      <th>NAME</th>
      <th>TAGS</th>
   </tr>
 
-<!--Table Values -->
+<!--SunnyDay Values -->
   <tr class="TableContent">
      <th class="IDBlock">9041851882</th>
      <th class="NameBlock">Coastal Cruising</th>
@@ -297,9 +306,19 @@ h3 {
      <th class="TagsBlock">#SunnyDay #Midday</th>
   </tr>
   <tr class="TableContent">
+     <th class="IDBlock">1841618223</th>
+     <th class="NameBlock">Keep It Upbeat</th>
+     <th class="TagsBlock">#SunnyDay #Midday</th>
+  </tr>
+  <tr class="TableContent">
      <th class="IDBlock">1841112792</th>
      <th class="NameBlock">Caribbean Sun</th>
      <th class="TagsBlock">#SunnyDay #Upbeat</th>
+  </tr>
+  <tr class="TableContent">
+     <th class="IDBlock">9042578129</th>
+     <th class="NameBlock">Fun In Paradise</th>
+     <th class="TagsBlock">#SunnyDay #Midday</th>
   </tr>
   <tr class="TableContent">
      <th class="IDBlock">1844399914</th>
