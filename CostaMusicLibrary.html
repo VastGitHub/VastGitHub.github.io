@@ -57,22 +57,35 @@
 
 	/* Images */       
 	.CostaLogo {
-		width: 70px;
-		margin-left: auto;
-		margin-right: auto;
+		width: 80px;
 		align: center;
 		padding: 0px;
 		display: block;
+                transition: 0.75s;
+	}
+
+.CostaLogo:Hover {
+		width: 100px;
+		rotate: -360deg;
 	}
 
 
 	.Quote {
 		font-weight: 700;
+                text-align:left;
 	}
 
+.yellowUnderline {
+  text-decoration: underline;
+  text-decoration-color: #ffd100;
+  text-decoration-thickness: 4px;
+
+}
+
 	.AuthorTag {
-		font-size: 15px;
+		font-size: 12px;
 		font-weight: 400;
+                text-align: left;
 	}
 
 	.footer {
@@ -256,9 +269,9 @@
 <body>
 
 	<!-- Important Announcement Banner -->
-	<div id="BeginingOfPage"></div>
+	<div id="BeginingOfPage"> </div> 
 
-	<p class="AnnouncementBanner"><b>[BETA STATE]</b> This site is currently in a BETA state, expect bugs/blanks. Contact @Vast#4617 if any issues occur.</p>
+<!-- <p class="AnnouncementBanner"><b>[BETA STATE]</b> This site is currently in a BETA state, expect bugs/blanks. Contact @Vast#4617 if any issues occur.</p> -->
 
 
 	<!-- Header -->
@@ -267,7 +280,7 @@
 
 	<div class="FontColorWhite">
 
-	<h1 class="Quote">Music makes an experience better.</h1></div>
+	<h1 class="Quote">Music makes an <u class="yellowUnderline">experience</u> better.</h1></div>
 	<h1 class="AuthorTag">Costa Cruises Music Dialog</h1></div>
 
 
