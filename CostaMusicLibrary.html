@@ -1,55 +1,59 @@
 <!DOCTYPE html>
 	<html>
 	<head>
-	<title>Music Dialog - Costa Cruises</title>
-	<meta charset="utf-8">
+		
+	<title>Music Library - Costa Cruises</title>
+	<link rel="icon" type="image/x-icon" href="https://lh3.googleusercontent.com/1A6rVusIqKT295Bq0HVXvfVKByaoMwf20_cYsoAOhVOXiDOSZ-Y5v9V5RffULVZw4x9gNIQWw5MUZx1nQ7asj79ATGqMqvuIT8n_rFr_0VtYGCVsaverDpONWpgFH5lR5mdnOWjTGQ=s48-p-k">
+	
+	<meta charset="utf-8"
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet"> 
-	<style>
+	
+<style>
 
-body {
-	margin: 25px;
-	padding: 0;
-	font-family: 'Poppins', sans-serif;
-	font-color: #FFFFFF;
-	background: #1D1D1F;
-}
+	body {
+		margin: 25px;
+		padding: 0;
+		font-family: 'Poppins', sans-serif;
+		font-color: #FFFFFF;
+		background: #1D1D1F;
+	}
 
-.Space {
-	margin: 8px;
-	padding: 25px;
-}
+	.Space {
+		margin: 8px;
+		padding: 25px;
+	}
 
-.topNav {
-	background: rgba(255,255,255,0);
-}
+	.topNav {
+		background: rgba(255,255,255,0);
+	}
 
-.header {
-	padding: 150px;
-	text-align: center;
-	margin: -25px;
-	background-image: url("https://lh3.googleusercontent.com/hDxmD8wQPrR6-nrP7wabsAezu8gjBkkl8eU_GOs0YkCR68pvIWHAj7Kb_POlz5u_eo-Y75OJt3go0BV2stcgCvJSeOorB6k1zv5JYMGsko59852izVO2CF_mVA_DfoJHIjTgQlonSw=w2400");
-	background-position: center;
-	background-size: auto; 
-	opacity: 1;
-	font-weight: Bold;
-}
+	.header {
+		padding: 150px;
+		text-align: center;
+		margin: -25px;
+		background-image: url("https://lh3.googleusercontent.com/hDxmD8wQPrR6-nrP7wabsAezu8gjBkkl8eU_GOs0YkCR68pvIWHAj7Kb_POlz5u_eo-Y75OJt3go0BV2stcgCvJSeOorB6k1zv5JYMGsko59852izVO2CF_mVA_DfoJHIjTgQlonSw=w2400");
+		background-position: center;
+		background-size: auto; 
+		opacity: 1;
+		font-weight: Bold;
+	}
 
-.Warning {
-	background: rgba(255,0,50,.7);
-	border-radius: 5px;
-	border-style: solid;
-	border-width: 2px;
-	border-color: rgba(255,255,255,.5);
-	padding:25px;
+	.Warning {
+		background: rgba(255,0,50,.7);
+		border-radius: 5px;
+		border-style: solid;
+		border-width: 2px;
+		border-color: rgba(255,255,255,.5);
+		padding:25px;
 
-	transition: .4s;
-}
+		transition: .4s;
+	}
 
-.Warning:hover {
-	box-shadow: 0 0 15px rgba(255,0,50,.75);
-}
+	.Warning:hover {
+		box-shadow: 0 0 15px rgba(255,0,50,.75);
+	}
 
 	/* Images */       
 	.CostaLogo {
@@ -62,87 +66,87 @@ body {
 	}
 
 
-.Quote {
-	font-weight: 700;
-}
+	.Quote {
+		font-weight: 700;
+	}
 
-.AuthorTag {
-	font-size: 15px;
-	font-weight: 400;
-}
+	.AuthorTag {
+		font-size: 15px;
+		font-weight: 400;
+	}
 
-.footer {
-	padding: 5px;
-	text-align: center;
-	background: #373737;
-	opacity: 1;
-	border-radius: 8px;
-	transition: 0.4s;
-	width: 370px;
+	.footer {
+		padding: 5px;
+		text-align: center;
+		background: #373737;
+		opacity: 1;
+		border-radius: 8px;
+		transition: 0.4s;
+		width: 370px;
 
-}
+	}
 
-.footer:hover {
-	opacity: .8;
-	cursor: pointer;
-}
+	.footer:hover {
+		opacity: .8;
+		cursor: pointer;
+	}
 
-.Important {
-	background-color:#0071E3; 
-	border: none;
-	border-radius: 0px;
-	color: white;
-	padding: 15px 32px;
-	text-align: center;
-	text-decoration: none;
-	display: inline-block;
-	font-weight: 500;
-	font-size: 16px;
-	margin: 0px -2px;
-	cursor: pointer;
-	-webkit-transition-duration: 0.4s; /* Safari */
-		transition-duration: 0.4s;
-}
+	.Important {
+		background-color:#0071E3; 
+		border: none;
+		border-radius: 0px;
+		color: white;
+		padding: 15px 32px;
+		text-align: center;
+		text-decoration: none;
+		display: inline-block;
+		font-weight: 500;
+		font-size: 16px;
+		margin: 0px -2px;
+		cursor: pointer;
+		-webkit-transition-duration: 0.4s; /* Safari */
+			transition-duration: 0.4s;
+	}
 
-.Disabled {
-	background-color: #373737; 
-	border: none;
-	border-radius: 0px;
-	opacity: 0.6;
-	color: white;
-	padding: 15px 32px;
-	text-align: center;
-	text-decoration: none;
-	display: inline-block;
-	font-size: 16px;
-	margin: 0px -2px;
-	cursor: pointer;
-	-webkit-transition-duration: 0.4s; /* Safari */
-		transition-duration: 0.4s;
-}
+	.Disabled {
+		background-color: #373737; 
+		border: none;
+		border-radius: 0px;
+		opacity: 0.6;
+		color: white;
+		padding: 15px 32px;
+		text-align: center;
+		text-decoration: none;
+		display: inline-block;
+		font-size: 16px;
+		margin: 0px -2px;
+		cursor: pointer;
+		-webkit-transition-duration: 0.4s; /* Safari */
+			transition-duration: 0.4s;
+	}
 
-.round {
-	border-radius: 5px;
-	margin: 2px;
-}
-
-
-.ButtonDisabled:hover {
-	cursor: not-allowed;
-}
-
-.button:hover {
-	opacity: .8;
-}
+	.round {
+		border-radius: 5px;
+		margin: 2px;
+	}
 
 
-#FontColorWhite {
-	color: rgba(255,255,255,1);
-	text-align: center;
-	background: rgba(58, 161, 60);
-	opacity: 0.9;
-	font-weight: bold;
-}
+	.ButtonDisabled:hover {
+		cursor: not-allowed;
+	}
+
+	.button:hover {
+		opacity: .8;
+	}
+
+
+	#FontColorWhite {
+		color: rgba(255,255,255,1);
+		text-align: center;
+		background: rgba(58, 161, 60);
+		opacity: 0.9;
+		font-weight: bold;
+	}
 
 	/* Announcement Banner */  
 	.AnnouncementBanner {
@@ -154,15 +158,15 @@ body {
 
 	/* Table Configurations */  
 
-button {
-font-family: 'Poppins', sans-serif;
-color: #FFFFFF;
-padding: 15px;
-cursor: pointer;
-font-weight: 600;
-font-size: 16px;
-width: 125px;
-}
+	button {
+	font-family: 'Poppins', sans-serif;
+	color: #FFFFFF;
+	padding: 15px;
+	cursor: pointer;
+	font-weight: 600;
+	font-size: 16px;
+	width: 125px;
+	}
 
 
 
@@ -170,46 +174,46 @@ width: 125px;
 		border-spacing: 15px 8px;
 	}
 
-.TableHeader {
-	color: rgba(255,255,255,1);
-	letter-spacing: 2px;
-	text-align: left;
+	.TableHeader {
+		color: rgba(255,255,255,1);
+		letter-spacing: 2px;
+		text-align: left;
 
-}
+	}
 
-.TableContent {
-	color: rgba(255,255,255,1);
-	font-weight: 200;
-}
+	.TableContent {
+		color: rgba(255,255,255,1);
+		font-weight: 200;
+	}
 
-.IDBlock {
-	background: rgba(50,50,50,1);
-	border-radius: 8px;
-	border-style: solid;
-	border-width: 2px;
-	border-color: rgba(255,255,255,.5);
-	font-weight: 600;
-	padding: 5px;
-	transition: 0.2s;
-}
+	.IDBlock {
+		background: rgba(50,50,50,1);
+		border-radius: 8px;
+		border-style: solid;
+		border-width: 2px;
+		border-color: rgba(255,255,255,.5);
+		font-weight: 600;
+		padding: 5px;
+		transition: 0.2s;
+	}
 
-.IDBlock:Hover {
-	background: rgba(100,100,100,1);
-	border-color: rgba(255,255,255,.75);
-	box-shadow: 0 0 15px rgba(100,100,100,.7);
-}
+	.IDBlock:Hover {
+		background: rgba(100,100,100,1);
+		border-color: rgba(255,255,255,.75);
+		box-shadow: 0 0 15px rgba(100,100,100,.7);
+	}
 
 
-.NameBlock {
-	font-weight: 500;
-	text-align: left;
-}
+	.NameBlock {
+		font-weight: 500;
+		text-align: left;
+	}
 
-.TagsBlock {
-	font-weight:300;
-	color: rgba(255,255,255,.75);
-	text-align: left;
-}
+	.TagsBlock {
+		font-weight:300;
+		color: rgba(255,255,255,.75);
+		text-align: left;
+	}
 
 
 
@@ -222,34 +226,34 @@ width: 125px;
 		height: 25px;
 	}
 
-h2 {
-	color:#FFFFFF;
-	font-weight: 700;
-	height: 20px;
-	text-spacing: 25px;
-}
+	h2 {
+		color:#FFFFFF;
+		font-weight: 700;
+		height: 20px;
+		text-spacing: 25px;
+	}
 
-h1 {
-	color: #FFFFFF;
-	font-size: 40px;
-	height: 30px;
-}
+	h1 {
+		color: #FFFFFF;
+		font-size: 40px;
+		height: 30px;
+	}
 
-p {
-	color: #FFFFFF;
-}
+	p {
+		color: #FFFFFF;
+	}
 
-a {
-	color: rgba(133, 0, 0);
-}
+	a {
+		color: rgba(133, 0, 0);
+	}
 
-.Sources { 
-	text-align: center;
-}          
+	.Sources { 
+		text-align: center;
+	}          
 
-	</style>
-	</head>
-	<body>
+</style>
+</head>
+<body>
 
 	<!-- Important Announcement Banner -->
 	<div id="BeginingOfPage"></div>
@@ -279,13 +283,13 @@ a {
 	<h2 id="Notice">AUDIO INFRIGEMENT NOTICE</h2>
 	<p>All of the audios below are intended for Costa Cruises use. While we support other groups using third party sources for audio ids, we strongly believe in ID variety. So, we politely ask that secondhand groups are not to copy our list word-to-word. Instead, these groups should look elsewhere. We do, however allow taking a audio ID here-and-there for minimal use.</p> </div>
 
-		<!-- Sunny Day Audios  -->
+	<!-- Sunny Day Audios  -->
 
-		<br><br>
+	<br><br>
 
-		<h3 class="Genre"><b>"SUNNY DAY"</b> AUDIOS</h3>
-		<p>Upbeat, positive, tropical songs.
-		</p>
+	<h3 class="Genre"><b>"SUNNY DAY"</b> AUDIOS</h3>
+	<p>Upbeat, positive, tropical songs.
+	</p>
 
 		<table>
 
@@ -374,15 +378,15 @@ a {
 		</tr>
 		</table>
 
-		<br>
-		<hr class="Divider">
-		<br>
+	<br>
+	<hr class="Divider">
+	<br>
 
-		<!-- Upbeat Audios  -->
+	<!-- Upbeat Audios  -->
 
-		<h3 class="Genre"><b>"UPBEAT"</b> AUDIOS</h3>
-		<p>Party-worthy, hype, intense songs. <b>Monstercat🐱 found here.</b>
-		</p>
+	<h3 class="Genre"><b>"UPBEAT"</b> AUDIOS</h3>
+	<p>Party-worthy, hype, intense songs. <b>Monstercat🐱 found here.</b>
+	</p>
 
 		<table>
 
@@ -447,15 +451,15 @@ a {
 
 		</table>
 
-		<br>
-		<hr class="Divider">
-		<br>
+	<br>
+	<hr class="Divider">
+	<br>
 
-		<!-- Dining Audios  -->
+	<!-- Dining Audios  -->
 
-		<h3 class="Genre"><b>"DINING"</b> AUDIOS</h3>
-		<p>Slow, jazzy, soft dining songs.
-		</p>
+	<h3 class="Genre"><b>"DINING"</b> AUDIOS</h3>
+	<p>Slow, jazzy, soft dining songs.
+	</p>
 
 		<table>
 
@@ -474,15 +478,15 @@ a {
 		</tr>
 		</table>
 
-		<br>
-		<hr class="Divider">
-		<br>
+	<br>
+	<hr class="Divider">
+	<br>
 
-		<!-- Night Audios  -->
+	<!-- Night Audios  -->
 
-		<h3 class="Genre"><b>"NIGHT"</b> AUDIOS</h3>
-		<p>Slow, jazzy, atmospheric songs.
-		</p>
+	<h3 class="Genre"><b>"NIGHT"</b> AUDIOS</h3>
+	<p>Slow, jazzy, atmospheric songs.
+	</p>
 
 		<table>
 
@@ -547,18 +551,18 @@ a {
 
 		</table>
 
-		<!-- Footer -->
+	<!-- Footer -->
 
-		<br>
-		<br>
-		<br>
+	<br>
+	<br>
+	<br>
 
-		</div>
+	</div>
 
-		<div class="footer"><a href="#BeginingOfPage">
-		<p>Return to Top</p> </a></div>
+	<div class="footer"><a href="#BeginingOfPage">
+	<p>Return to Top</p> </a></div>
 
-		<p>© 2022 Roblox Costa Cruises All rights reserved.</p>
+	<p>© 2022 Roblox Costa Cruises All rights reserved.</p>
 
 	<script>
 
