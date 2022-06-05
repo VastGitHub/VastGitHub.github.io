@@ -1,570 +1,573 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <title>Music Dialog - Costa Cruises</title>
-        <meta charset="utf-8">
-      <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet"> 
-        <style>
-        
-        body {
-            margin: 25px;
-            padding: 0;
-            font-family: 'Poppins', sans-serif;
-            font-color: #FFFFFF;
-            background: #1D1D1F;
-        }
-        
-        .Space {
-            margin: 8px;
-            padding: 25px;
-        }
-       
-        .topNav {
-         background: rgba(255,255,255,0);
-        }
-        
-        .header {
-          padding: 150px;
-          text-align: center;
-          margin: -25px;
-          background-image: url("https://lh3.googleusercontent.com/hDxmD8wQPrR6-nrP7wabsAezu8gjBkkl8eU_GOs0YkCR68pvIWHAj7Kb_POlz5u_eo-Y75OJt3go0BV2stcgCvJSeOorB6k1zv5JYMGsko59852izVO2CF_mVA_DfoJHIjTgQlonSw=w2400");
-          background-position: center;
-          background-size: auto; 
-          opacity: 1;
-          font-weight: Bold;
-          }
+	<html>
+	<head>
+	<title>Music Dialog - Costa Cruises</title>
+	<meta charset="utf-8">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet"> 
+	<style>
+
+body {
+	margin: 25px;
+	padding: 0;
+	font-family: 'Poppins', sans-serif;
+	font-color: #FFFFFF;
+	background: #1D1D1F;
+}
+
+.Space {
+	margin: 8px;
+	padding: 25px;
+}
+
+.topNav {
+	background: rgba(255,255,255,0);
+}
+
+.header {
+	padding: 150px;
+	text-align: center;
+	margin: -25px;
+	background-image: url("https://lh3.googleusercontent.com/hDxmD8wQPrR6-nrP7wabsAezu8gjBkkl8eU_GOs0YkCR68pvIWHAj7Kb_POlz5u_eo-Y75OJt3go0BV2stcgCvJSeOorB6k1zv5JYMGsko59852izVO2CF_mVA_DfoJHIjTgQlonSw=w2400");
+	background-position: center;
+	background-size: auto; 
+	opacity: 1;
+	font-weight: Bold;
+}
 
 .Warning {
-            background: rgba(255,0,50,.7);
-border-radius: 5px;
-border-style: solid;
-border-width: 2px;
-border-color: rgba(255,255,255,.5);
-padding:25px;
+	background: rgba(255,0,50,.7);
+	border-radius: 5px;
+	border-style: solid;
+	border-width: 2px;
+	border-color: rgba(255,255,255,.5);
+	padding:25px;
 
-  transition: .4s;
+	transition: .4s;
 }
 
 .Warning:hover {
-box-shadow: 0 0 15px rgba(255,0,50,.75);
-}
-   
-/* Images */       
-          .CostaLogo {
-          width: 70px;
-          margin-left: auto;
-          margin-right: auto;
-          align: center;
-          padding: 0px;
-          display: block;
-          }
-          
-          
-          .Quote {
-          font-weight: 700;
-          }
-          
-          .AuthorTag {
-          font-size: 15px;
-          font-weight: 400;
-          }
-          
-        .footer {
-          padding: 5px;
-          text-align: center;
-          background: #373737;
-          opacity: 1;
-          border-radius: 8px;
-          transition: 0.4s;
-          width: 370px;
-          
-		}
-          
-         .footer:hover {
-             opacity: .8;
-             cursor: pointer;
-         }
- 
-/* Buttons */     
-          Button {
-          background-color:#373737; 
-          border: none;
-          border-radius: 0px;
-          color: white;
-          padding: 15px 32px;
-          text-align: center;
-          text-decoration: none;
-          display: inline-block;
-          font-weight: 500;
-          font-size: 16px;
-          margin: 0px -2px;
-          cursor: pointer;
-          -webkit-transition-duration: 2s; /* Safari */
-          transition-duration: 0.4s;
-        }
-          
-        .Important {
-          background-color:#0071E3; 
-          border: none;
-          border-radius: 0px;
-          color: white;
-          padding: 15px 32px;
-          text-align: center;
-          text-decoration: none;
-          display: inline-block;
-          font-weight: 500;
-          font-size: 16px;
-          margin: 0px -2px;
-          cursor: pointer;
-          -webkit-transition-duration: 0.4s; /* Safari */
-          transition-duration: 0.4s;
-          }
-          
-        .Disabled {
-          background-color: #373737; 
-          border: none;
-          border-radius: 0px;
-          opacity: 0.6;
-          color: white;
-          padding: 15px 32px;
-          text-align: center;
-          text-decoration: none;
-          display: inline-block;
-          font-size: 16px;
-          margin: 0px -2px;
-          cursor: pointer;
-          -webkit-transition-duration: 0.4s; /* Safari */
-          transition-duration: 0.4s;
-        }
-        
-        .round {
-        border-radius: 5px;
-        margin: 2px;
-        }
-        
-        
-        .ButtonDisabled:hover {
-            cursor: not-allowed;
-        }
-        
-        .button:hover {
-            opacity: .8;
-        }
-        
-        
-        #FontColorWhite {
-            color: rgba(255,255,255,1);
-            text-align: center;
-            background: rgba(58, 161, 60);
-            opacity: 0.9;
-            font-weight: bold;
-        }
-        
-/* Announcement Banner */  
-.AnnouncementBanner {
-background: rgba(255,255,255,0);
-padding: 0px;
-text-align:center;
+	box-shadow: 0 0 15px rgba(255,0,50,.75);
 }
 
-        
-/* Table Configurations */  
+	/* Images */       
+	.CostaLogo {
+		width: 70px;
+		margin-left: auto;
+		margin-right: auto;
+		align: center;
+		padding: 0px;
+		display: block;
+	}
 
-table {
-border-spacing: 15px 8px;
+
+.Quote {
+	font-weight: 700;
 }
+
+.AuthorTag {
+	font-size: 15px;
+	font-weight: 400;
+}
+
+.footer {
+	padding: 5px;
+	text-align: center;
+	background: #373737;
+	opacity: 1;
+	border-radius: 8px;
+	transition: 0.4s;
+	width: 370px;
+
+}
+
+.footer:hover {
+	opacity: .8;
+	cursor: pointer;
+}
+
+.Important {
+	background-color:#0071E3; 
+	border: none;
+	border-radius: 0px;
+	color: white;
+	padding: 15px 32px;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	font-weight: 500;
+	font-size: 16px;
+	margin: 0px -2px;
+	cursor: pointer;
+	-webkit-transition-duration: 0.4s; /* Safari */
+		transition-duration: 0.4s;
+}
+
+.Disabled {
+	background-color: #373737; 
+	border: none;
+	border-radius: 0px;
+	opacity: 0.6;
+	color: white;
+	padding: 15px 32px;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	font-size: 16px;
+	margin: 0px -2px;
+	cursor: pointer;
+	-webkit-transition-duration: 0.4s; /* Safari */
+		transition-duration: 0.4s;
+}
+
+.round {
+	border-radius: 5px;
+	margin: 2px;
+}
+
+
+.ButtonDisabled:hover {
+	cursor: not-allowed;
+}
+
+.button:hover {
+	opacity: .8;
+}
+
+
+#FontColorWhite {
+	color: rgba(255,255,255,1);
+	text-align: center;
+	background: rgba(58, 161, 60);
+	opacity: 0.9;
+	font-weight: bold;
+}
+
+	/* Announcement Banner */  
+	.AnnouncementBanner {
+		background: rgba(255,255,255,0);
+		padding: 0px;
+		text-align:center;
+	}
+
+
+	/* Table Configurations */  
+
+button {
+font-family: 'Poppins', sans-serif;
+color: #FFFFFF;
+padding: 15px;
+cursor: pointer;
+font-weight: 600;
+font-size: 16px;
+width: 125px;
+}
+
+
+
+	table {
+		border-spacing: 15px 8px;
+	}
 
 .TableHeader {
-color: rgba(255,255,255,1);
-letter-spacing: 2px;
-text-align: left;
+	color: rgba(255,255,255,1);
+	letter-spacing: 2px;
+	text-align: left;
 
 }
 
 .TableContent {
-color: rgba(255,255,255,1);
-font-weight: 200;
+	color: rgba(255,255,255,1);
+	font-weight: 200;
 }
 
 .IDBlock {
-background: rgba(50,50,50,1);
-border-radius: 8px;
-border-style: solid;
-border-width: 2px;
-border-color: rgba(255,255,255,.5);
-font-weight: 600;
-padding: 5px;
-transition: 0.2s;
+	background: rgba(50,50,50,1);
+	border-radius: 8px;
+	border-style: solid;
+	border-width: 2px;
+	border-color: rgba(255,255,255,.5);
+	font-weight: 600;
+	padding: 5px;
+	transition: 0.2s;
 }
 
 .IDBlock:Hover {
-background: rgba(100,100,100,1);
-border-color: rgba(255,255,255,.75);
-box-shadow: 0 0 15px rgba(100,100,100,.7);
+	background: rgba(100,100,100,1);
+	border-color: rgba(255,255,255,.75);
+	box-shadow: 0 0 15px rgba(100,100,100,.7);
 }
 
 
 .NameBlock {
-font-weight: 500;
-text-align: left;
+	font-weight: 500;
+	text-align: left;
 }
 
 .TagsBlock {
-font-weight:300;
-color: rgba(255,255,255,.75);
-text-align: left;
+	font-weight:300;
+	color: rgba(255,255,255,.75);
+	text-align: left;
 }
 
 
 
-/* Text Types */  
+	/* Text Types */  
 
-       h3 {
-            color:#FFFFFF;
-            font-weight: 500;
-            font-size: 20px;
-            height: 25px;
-        }
-          
-        h2 {
-            color:#FFFFFF;
-            font-weight: 700;
-            height: 20px;
-            text-spacing: 25px;
-        }
-          
-        h1 {
-            color: #FFFFFF;
-            font-size: 40px;
-            height: 30px;
-        }
-          
-        p {
-            color: #FFFFFF;
-        }
-        
-        a {
-            color: rgba(133, 0, 0);
-        }
+	h3 {
+		color:#FFFFFF;
+		font-weight: 500;
+		font-size: 20px;
+		height: 25px;
+	}
 
-        .Sources { 
-            text-align: center;
-        }          
+h2 {
+	color:#FFFFFF;
+	font-weight: 700;
+	height: 20px;
+	text-spacing: 25px;
+}
 
-        </style>
-    </head>
-    <body>
+h1 {
+	color: #FFFFFF;
+	font-size: 40px;
+	height: 30px;
+}
 
-<!-- Important Announcement Banner -->
-<div id="BeginingOfPage"></div>
+p {
+	color: #FFFFFF;
+}
 
-<p class="AnnouncementBanner"><b>[BETA STATE]</b> This site is currently in a BETA state, expect bugs/blanks. Contact @Vast#4617 if any issues occur.</p>
+a {
+	color: rgba(133, 0, 0);
+}
+
+.Sources { 
+	text-align: center;
+}          
+
+	</style>
+	</head>
+	<body>
+
+	<!-- Important Announcement Banner -->
+	<div id="BeginingOfPage"></div>
+
+	<p class="AnnouncementBanner"><b>[BETA STATE]</b> This site is currently in a BETA state, expect bugs/blanks. Contact @Vast#4617 if any issues occur.</p>
 
 
-<!-- Header -->
-<div class="header">
-  		<a><img class="CostaLogo" alt="Costa Cruises Logo" src="https://lh3.googleusercontent.com/BzUlkJtWhUypx4uQWhSq9VSjZFTjTPEDZrIWHnIbh2_w2vT-bLQR3MkyomH6I0vzESic6A2sFu3r0E-EWzx8vvmOxQIFFwawph_MiCffpG1gRIgZmtpbHo_BQwcHf7TKnjqHEx2XnA=w2400"><alt="Costa Cruises Logo"></a>
-      
-<div class="FontColorWhite">
-  
-  <h1 class="Quote">Music makes an experience better.</h1></div>
-  <h1 class="AuthorTag">Costa Cruises Music Dialog</h1></div>
-  
-  
-  
-  </div>
-        
-<div class="Space">
-<br><br>
+	<!-- Header -->
+	<div class="header">
+	<a><img class="CostaLogo" alt="Costa Cruises Logo" src="https://lh3.googleusercontent.com/BzUlkJtWhUypx4uQWhSq9VSjZFTjTPEDZrIWHnIbh2_w2vT-bLQR3MkyomH6I0vzESic6A2sFu3r0E-EWzx8vvmOxQIFFwawph_MiCffpG1gRIgZmtpbHo_BQwcHf7TKnjqHEx2XnA=w2400"><alt="Costa Cruises Logo"></a>
 
-<!-- Music Notice -->
+	<div class="FontColorWhite">
 
-<div class="Warning">
-        <h2 id="Notice">AUDIO INFRIGEMENT NOTICE</h2>
-        <p>All of the audios below are intended for Costa Cruises use. While we support other groups using third party sources for audio ids, we strongly believe in ID variety. So, we politely ask that secondhand groups are not to copy our list word-to-word. Instead, these groups should look elsewhere. We do, however allow taking a audio ID here-and-there for minimal use.</p> </div>
+	<h1 class="Quote">Music makes an experience better.</h1></div>
+	<h1 class="AuthorTag">Costa Cruises Music Dialog</h1></div>
 
-<!-- Sunny Day Audios  -->
 
-        <br><br>
-        
-        <h3 class="Genre"><b>"SUNNY DAY"</b> AUDIOS</h3>
-        <p>Upbeat, positive, tropical songs.
-        </p>
 
-<table>
+	</div>
 
-<!-- Table Header -->
-  <tr class="TableHeader">
-     <th>SONG ID</th>
-     <th>NAME</th>
-     <th>TAGS</th>
-  </tr>
+	<div class="Space">
+	<br><br>
 
-<!--SunnyDay Values -->
-  <tr class="TableContent">
-     <th class="IDBlock">9041851882</th>
-     <th class="NameBlock">Coastal Cruising</th>
-     <th class="TagsBlock">#SunnyDay</th>
-  </tr>
-  <tr class="TableContent">
-     <th class="IDBlock">1840904230</th>
-     <th class="NameBlock">Cruising Town</th>
-     <th class="TagsBlock">#SunnyDay #SoftMetal</th>
-  </tr>
-  <tr class="TableContent">
-     <th class="IDBlock">1837501290</th>
-     <th class="NameBlock">Coast to Coast</th>
-     <th class="TagsBlock">#SunnyDay #Tropical</th>
-  </tr>
-  <tr class="TableContent">
-     <th class="IDBlock">1843489097</th>
-     <th class="NameBlock">Cruising The Blues</th>
-     <th class="TagsBlock">#SunnyDay #Tropical</th>
-  </tr>
-  <tr class="TableContent">
-     <th class="IDBlock">1839712214</th>
-     <th class="NameBlock">Very Upbeat</th>
-     <th class="TagsBlock">#SunnyDay #Vocals</th>
-  </tr>
-  <tr class="TableContent">
-     <th class="IDBlock">1840755248</th>
-     <th class="NameBlock">Sunshiner (A)</th>
-     <th class="TagsBlock">#SunnyDay #Midday</th>
-  </tr>
-  <tr class="TableContent">
-     <th class="IDBlock">1841618223</th>
-     <th class="NameBlock">Keep It Upbeat</th>
-     <th class="TagsBlock">#SunnyDay #Midday</th>
-  </tr>
-  <tr class="TableContent">
-     <th class="IDBlock">1841112792</th>
-     <th class="NameBlock">Caribbean Sun</th>
-     <th class="TagsBlock">#SunnyDay #Upbeat</th>
-  </tr>
-  <tr class="TableContent">
-     <th class="IDBlock">9042578129</th>
-     <th class="NameBlock">Fun In Paradise</th>
-     <th class="TagsBlock">#SunnyDay #Midday</th>
-  </tr>
-  <tr class="TableContent">
-     <th class="IDBlock">1844399914</th>
-     <th class="NameBlock">Caribbean Dreams</th>
-     <th class="TagsBlock">#SunnyDay #CruiseShipTycoon⚓</th>
-  </tr>
-  <tr class="TableContent">
-     <th class="IDBlock">1844753491</th>
-     <th class="NameBlock">We Surrender</th>
-     <th class="TagsBlock">#SunnyDay #Tropical #Upbeat #CruiseShipTycoon⚓</th>
-  </tr>
-  <tr class="TableContent">
-     <th class="IDBlock">1844744670</th>
-     <th class="NameBlock">Caribbean Island</th>
-     <th class="TagsBlock">#SunnyDay #Upbeat</th>
-  </tr>
-  <tr class="TableContent">
-     <th class="IDBlock">1842693724</th>
-     <th class="NameBlock">Caribbean High Life</th>
-     <th class="TagsBlock">#SunnyDay #Upbeat</th>
-  </tr>
-  <tr class="TableContent">
-     <th class="IDBlock">1840250146</th>
-     <th class="NameBlock">Get Tropical!</th>
-     <th class="TagsBlock">#SunnyDay #Midday</th>
-  </tr>
-  <tr class="TableContent">
-     <th class="IDBlock">1837926470</th>
-     <th class="NameBlock">Everlasting</th>
-     <th class="TagsBlock">#SunnyDay #Midday</th>
-  </tr>
-</table>
+	<!-- Music Notice -->
 
-<br>
-<hr class="Divider">
-<br>
+	<div class="Warning">
+	<h2 id="Notice">AUDIO INFRIGEMENT NOTICE</h2>
+	<p>All of the audios below are intended for Costa Cruises use. While we support other groups using third party sources for audio ids, we strongly believe in ID variety. So, we politely ask that secondhand groups are not to copy our list word-to-word. Instead, these groups should look elsewhere. We do, however allow taking a audio ID here-and-there for minimal use.</p> </div>
 
-<!-- Upbeat Audios  -->
-        
-        <h3 class="Genre"><b>"UPBEAT"</b> AUDIOS</h3>
-        <p>Party-worthy, hype, intense songs. <b>Monstercat🐱 found here.</b>
-        </p>
+		<!-- Sunny Day Audios  -->
 
-<table>
+		<br><br>
 
-<!-- Table Header -->
-  <tr class="TableHeader">
-     <th>SONG ID</th>
-     <th>NAME</th>
-     <th>TAGS</th>
-  </tr>
+		<h3 class="Genre"><b>"SUNNY DAY"</b> AUDIOS</h3>
+		<p>Upbeat, positive, tropical songs.
+		</p>
 
-<!--Night Time Values -->
-  <tr class="TableContent">
-     <th class="IDBlock">5410086445</th>
-     <th class="NameBlock">Grant - Are We Still Young</th>
-     <th class="TagsBlock">#Upbeat #PartyWorthy #Vocals #Monstercat🐱</th>
-  </tr>
-  <tr class="TableContent">
-     <th class="IDBlock">7029017448</th>
-     <th class="NameBlock">Play It Cool - Terry Zhong</th>
-     <th class="TagsBlock">#Upbeat #PartyWorthy #Vocals #Monstercat🐱</th>
-  </tr>
-  <tr class="TableContent">
-     <th class="IDBlock">5410085694</th>
-     <th class="NameBlock">Tokyo Machine - EPIC</th>
-     <th class="TagsBlock">#Upbeat #PartyWorthy #Vocals #Monstercat🐱</th>
-  </tr>
-  <tr class="TableContent">
-     <th class="IDBlock">7023617400</th>
-     <th class="NameBlock">Bad Computer - Destroy Me</th>
-     <th class="TagsBlock">#Upbeat #PartyWorthy #Vocals #Monstercat🐱</th>
-  </tr>
-  <tr class="TableContent">
-     <th class="IDBlock">5410085763</th>
-     <th class="NameBlock">Tokyo Machine - PLAY</th>
-     <th class="TagsBlock">#Upbeat #PartyWorthy #Vocals #Monstercat🐱</th>
-  </tr>
-  <tr class="TableContent">
-     <th class="IDBlock">7023445033</th>
-     <th class="NameBlock">Aiobahn & Vin - About U</th>
-     <th class="TagsBlock">#Upbeat #PartyWorthy #Vocals #Monstercat🐱</th>
-  </tr>
-  <tr class="TableContent">
-     <th class="IDBlock">5409360995</th>
-     <th class="NameBlock">Dion Timmer - Shiawase</th>
-     <th class="TagsBlock">#Upbeat #PartyWorthy #Vocals #Monstercat🐱</th>
-  </tr>
-  <tr class="TableContent">
-     <th class="IDBlock">1846924681</th>
-     <th class="NameBlock">Party</th>
-     <th class="TagsBlock">#Upbeat #PartyWorthy #Electronic</th>
-  </tr>
-  <tr class="TableContent">
-     <th class="IDBlock">1838595167</th>
-     <th class="NameBlock">Electro Lush</th>
-     <th class="TagsBlock">#Upbeat #PartyWorthy</th>
-  </tr>
-  <tr class="TableContent">
-     <th class="IDBlock">1837158020</th>
-     <th class="NameBlock">Coconuts</th>
-     <th class="TagsBlock">#SunnyDay #Upbeat #Retro</th>
-  </tr>
+		<table>
 
-</table>
+		<!-- Table Header -->
+		<tr class="TableHeader">
+		<th>SONG ID</th>
+		<th>NAME</th>
+		<th>TAGS</th>
+		</tr>
 
-<br>
-<hr class="Divider">
-<br>
+		<!--SunnyDay Values -->
+		<tr class="TableContent">
+		<th><button class="IDBlock" onclick="copyToClipboard('9041851882')">9041851882</button></th>
+		<th class="NameBlock">Coastal Cruising</th>
+		<th class="TagsBlock">#SunnyDay</th>
+		</tr>
+		<tr class="TableContent">
+		<th><button class="IDBlock" onclick="copyToClipboard('1840904230')">1840904230</button></th>
+		<th class="NameBlock">Cruising Town</th>
+		<th class="TagsBlock">#SunnyDay #SoftMetal</th>
+		</tr>
+		<tr class="TableContent">
+		<th><button class="IDBlock" onclick="copyToClipboard('1837501290')">1837501290</button></th>
+		<th class="NameBlock">Coast to Coast</th>
+		<th class="TagsBlock">#SunnyDay #Tropical</th>
+		</tr>
+		<tr class="TableContent">
+		<th><button class="IDBlock" onclick="copyToClipboard('1843489097')">1843489097</button></th>
+		<th class="NameBlock">Cruising The Blues</th>
+		<th class="TagsBlock">#SunnyDay #Tropical</th>
+		</tr>
+		<tr class="TableContent">
+		<th><button class="IDBlock" onclick="copyToClipboard('1839712214')">1839712214</button></th>
+		<th class="NameBlock">Very Upbeat</th>
+		<th class="TagsBlock">#SunnyDay #Vocals</th>
+		</tr>
+		<tr class="TableContent">
+		<th><button class="IDBlock" onclick="copyToClipboard('1840755248')">1840755248</button></th>
+		<th class="NameBlock">Sunshiner (A)</th>
+		<th class="TagsBlock">#SunnyDay #Midday</th>
+		</tr>
+		<tr class="TableContent">
+		<th><button class="IDBlock" onclick="copyToClipboard('1841618223')">1841618223</button></th>
+		<th class="NameBlock">Keep It Upbeat</th>
+		<th class="TagsBlock">#SunnyDay #Midday</th>
+		</tr>
+		<tr class="TableContent">
+		<th><button class="IDBlock" onclick="copyToClipboard('1841112792')">1841112792</button></th>
+		<th class="NameBlock">Caribbean Sun</th>
+		<th class="TagsBlock">#SunnyDay #Upbeat</th>
+		</tr>
+		<tr class="TableContent">
+		<th><button class="IDBlock" onclick="copyToClipboard('9042578129')">9042578129</button></th>
+		<th class="NameBlock">Fun In Paradise</th>
+		<th class="TagsBlock">#SunnyDay #Midday</th>
+		</tr>
+		<tr class="TableContent">
+		<th><button class="IDBlock" onclick="copyToClipboard('1844399914')">1844399914</button></th>
+		<th class="NameBlock">Caribbean Dreams</th>
+		<th class="TagsBlock">#SunnyDay #CruiseShipTycoon⚓</th>
+		</tr>
+		<tr class="TableContent">
+		<th><button class="IDBlock" onclick="copyToClipboard('1844753491')">1844753491</button></th>
+		<th class="NameBlock">We Surrender</th>
+		<th class="TagsBlock">#SunnyDay #Tropical #Upbeat #CruiseShipTycoon⚓</th>
+		</tr>
+		<tr class="TableContent">
+		<th><button class="IDBlock" onclick="copyToClipboard('1844744670')">1844744670</button></th>
+		<th class="NameBlock">Caribbean Island</th>
+		<th class="TagsBlock">#SunnyDay #Upbeat</th>
+		</tr>
+		<tr class="TableContent">
+		<th><button class="IDBlock" onclick="copyToClipboard('1842693724')">1842693724</button></th>
+		<th class="NameBlock">Caribbean High Life</th>
+		<th class="TagsBlock">#SunnyDay #Upbeat</th>
+		</tr>
+		<tr class="TableContent">
+		<th><button class="IDBlock" onclick="copyToClipboard('1840250146')">1840250146</button></th>
+		<th class="NameBlock">Get Tropical!</th>
+		<th class="TagsBlock">#SunnyDay #Midday</th>
+		</tr>
+		<tr class="TableContent">
+		<th><button class="IDBlock" onclick="copyToClipboard('1837926470')">1837926470</button></th>
+		<th class="NameBlock">Everlasting</th>
+		<th class="TagsBlock">#SunnyDay #Midday</th>
+		</tr>
+		</table>
 
-<!-- Dining Audios  -->
-        
-        <h3 class="Genre"><b>"DINING"</b> AUDIOS</h3>
-        <p>Slow, jazzy, soft dining songs.
-        </p>
+		<br>
+		<hr class="Divider">
+		<br>
 
-<table>
+		<!-- Upbeat Audios  -->
 
-<!-- Table Header -->
-  <tr class="TableHeader">
-     <th>SONG ID</th>
-     <th>NAME</th>
-     <th>TAGS</th>
-  </tr>
+		<h3 class="Genre"><b>"UPBEAT"</b> AUDIOS</h3>
+		<p>Party-worthy, hype, intense songs. <b>Monstercat🐱 found here.</b>
+		</p>
 
-<!--Night Time Values -->
-  <tr class="TableContent">
-     <th class="IDBlock">9045467859</th>
-     <th class="NameBlock">Cruising (a)</th>
-     <th class="TagsBlock">#Dining #Jazz</th>
-  </tr>
-</table>
+		<table>
 
-<br>
-<hr class="Divider">
-<br>
+		<!-- Table Header -->
+		<tr class="TableHeader">
+		<th>SONG ID</th>
+		<th>NAME</th>
+		<th>TAGS</th>
+		</tr>
 
-<!-- Night Audios  -->
-        
-        <h3 class="Genre"><b>"NIGHT"</b> AUDIOS</h3>
-        <p>Slow, jazzy, atmospheric songs.
-        </p>
+		<!--Night Time Values -->
+		<tr class="TableContent">
+		<th><button class="IDBlock" onclick="copyToClipboard('5410086445')">5410086445</button></th>
+		<th class="NameBlock">Grant - Are We Still Young</th>
+		<th class="TagsBlock">#Upbeat #PartyWorthy #Vocals #Monstercat🐱</th>
+		</tr>
+		<tr class="TableContent">
+		<th><button class="IDBlock" onclick="copyToClipboard('7029017448')">7029017448</button></th>
+		<th class="NameBlock">Play It Cool - Terry Zhong</th>
+		<th class="TagsBlock">#Upbeat #PartyWorthy #Vocals #Monstercat🐱</th>
+		</tr>
+		<tr class="TableContent">
+		<th><button class="IDBlock" onclick="copyToClipboard('5410085694')">5410085694</button></th>
+		<th class="NameBlock">Tokyo Machine - EPIC</th>
+		<th class="TagsBlock">#Upbeat #PartyWorthy #Vocals #Monstercat🐱</th>
+		</tr>
+		<tr class="TableContent">
+		<th><button class="IDBlock" onclick="copyToClipboard('7023617400')">7023617400</button></th>
+		<th class="NameBlock">Bad Computer - Destroy Me</th>
+		<th class="TagsBlock">#Upbeat #PartyWorthy #Vocals #Monstercat🐱</th>
+		</tr>
+		<tr class="TableContent">
+		<th><button class="IDBlock" onclick="copyToClipboard('5410085763')">5410085763</button></th>
+		<th class="NameBlock">Tokyo Machine - PLAY</th>
+		<th class="TagsBlock">#Upbeat #PartyWorthy #Vocals #Monstercat🐱</th>
+		</tr>
+		<tr class="TableContent">
+		<th><button class="IDBlock" onclick="copyToClipboard('7023445033')">7023445033</button></th>
+		<th class="NameBlock">Aiobahn & Vin - About U</th>
+		<th class="TagsBlock">#Upbeat #PartyWorthy #Vocals #Monstercat🐱</th>
+		</tr>
+		<tr class="TableContent">
+		<th><button class="IDBlock" onclick="copyToClipboard('5409360995')">5409360995</button></th>
+		<th class="NameBlock">Dion Timmer - Shiawase</th>
+		<th class="TagsBlock">#Upbeat #PartyWorthy #Vocals #Monstercat🐱</th>
+		</tr>
+		<tr class="TableContent">
+		<th><button class="IDBlock" onclick="copyToClipboard('1846924681')">1846924681</button></th>
+		<th class="NameBlock">Party</th>
+		<th class="TagsBlock">#Upbeat #PartyWorthy #Electronic</th>
+		</tr>
+		<tr class="TableContent">
+		<th><button class="IDBlock" onclick="copyToClipboard('1838595167')">1838595167</button></th>
+		<th class="NameBlock">Electro Lush</th>
+		<th class="TagsBlock">#Upbeat #PartyWorthy</th>
+		</tr>
+		<tr class="TableContent">
+		<th><button class="IDBlock" onclick="copyToClipboard('1837158020')">1837158020</button></th>
+		<th class="NameBlock">Coconuts</th>
+		<th class="TagsBlock">#SunnyDay #Upbeat #Retro</th>
+		</tr>
 
-<table>
+		</table>
 
-<!-- Table Header -->
-  <tr class="TableHeader">
-     <th>SONG ID</th>
-     <th>NAME</th>
-     <th>TAGS</th>
-  </tr>
+		<br>
+		<hr class="Divider">
+		<br>
 
-<!--Night Time Values -->
-  <tr class="TableContent">
-     <th class="IDBlock">1835698045</th>
-     <th class="NameBlock">On A Cruise Ship</th>
-     <th class="TagsBlock">#NightWorthy #Jazz #CruiseShipTycoon⚓</th>
-  </tr>
-  <tr class="TableContent">
-     <th class="IDBlock">1839133960</th>
-     <th class="NameBlock">Cruise of Dreams</th>
-     <th class="TagsBlock">#NightWorthy #Atmospheric #CruiseShipTycoon⚓</th>
-  </tr>
-  <tr class="TableContent">
-     <th class="IDBlock">1844480372</th>
-     <th class="NameBlock">Caribbean Sunset</th>
-     <th class="TagsBlock">#NightWorthy #Mellow #CruiseShipTycoon⚓</th>
-  </tr>
-  <tr class="TableContent">
-     <th class="IDBlock">1837284012</th>
-     <th class="NameBlock">Cloud Cruising</th>
-     <th class="TagsBlock">#NightWorthy #Atmospheric</th>
-  </tr>
-  <tr class="TableContent">
-     <th class="IDBlock">1839134008</th>
-     <th class="NameBlock">Love Cruise</th>
-     <th class="TagsBlock">#NightWorthy #Atmospheric</th>
-  </tr>
-  <tr class="TableContent">
-     <th class="IDBlock">1839175312</th>
-     <th class="NameBlock">Bahamas Beach</th>
-     <th class="TagsBlock">#NightWorthy #Tropical #Atmospheric</th>
-  </tr>
-  <tr class="TableContent">
-     <th class="IDBlock">1842965712</th>
-     <th class="NameBlock">Paradise Cities</th>
-     <th class="TagsBlock">#NightWorthy #Atmospheric #Vocals</th>
-  </tr>
-  <tr class="TableContent">
-     <th class="IDBlock">1848038846</th>
-     <th class="NameBlock">Street Daze A</th>
-     <th class="TagsBlock">#NightWorthy #Atmospheric #SoftBeat</th>
-  </tr>
-  <tr class="TableContent">
-     <th class="IDBlock">9047963510</th>
-     <th class="NameBlock">Extinction</th>
-     <th class="TagsBlock">#NightWorthy #Vocals #Intense</th>
-  </tr>
-  <tr class="TableContent">
-     <th class="IDBlock">9045000139</th>
-     <th class="NameBlock">Gangster Cruise</th>
-     <th class="TagsBlock">#NightWorthy #SoftBeat</th>
-  </tr>
+		<!-- Dining Audios  -->
 
-</table>
-    
-<!-- Footer -->
-    
-    <br>
-    <br>
-    <br>
-    
-</div>
+		<h3 class="Genre"><b>"DINING"</b> AUDIOS</h3>
+		<p>Slow, jazzy, soft dining songs.
+		</p>
 
-<div class="footer"><a href="#BeginingOfPage">
-    <p>Return to Top</p> </a></div>
+		<table>
 
-<p>© 2022 Roblox Costa Cruises All rights reserved.</p>
+		<!-- Table Header -->
+		<tr class="TableHeader">
+		<th>SONG ID</th>
+		<th>NAME</th>
+		<th>TAGS</th>
+		</tr>
+
+		<!--Night Time Values -->
+		<tr class="TableContent">
+		<th><button class="IDBlock" onclick="copyToClipboard('9045467859')">9045467859</button></th>
+		<th class="NameBlock">Cruising (a)</th>
+		<th class="TagsBlock">#Dining #Jazz</th>
+		</tr>
+		</table>
+
+		<br>
+		<hr class="Divider">
+		<br>
+
+		<!-- Night Audios  -->
+
+		<h3 class="Genre"><b>"NIGHT"</b> AUDIOS</h3>
+		<p>Slow, jazzy, atmospheric songs.
+		</p>
+
+		<table>
+
+		<!-- Table Header -->
+		<tr class="TableHeader">
+		<th>SONG ID</th>
+		<th>NAME</th>
+		<th>TAGS</th>
+		</tr>
+
+		<!--Night Time Values -->
+		<tr class="TableContent">
+		<th><button class="IDBlock" onclick="copyToClipboard('1835698045')">1835698045</button></th>
+		<th class="NameBlock">On A Cruise Ship</th>
+		<th class="TagsBlock">#NightWorthy #Jazz #CruiseShipTycoon⚓</th>
+		</tr>
+		<tr class="TableContent">
+		<th><button class="IDBlock" onclick="copyToClipboard('1839133960')">1839133960</button></th>
+		<th class="NameBlock">Cruise of Dreams</th>
+		<th class="TagsBlock">#NightWorthy #Atmospheric #CruiseShipTycoon⚓</th>
+		</tr>
+		<tr class="TableContent">
+		<th><button class="IDBlock" onclick="copyToClipboard('1844480372')">1844480372</button></th>
+		<th class="NameBlock">Caribbean Sunset</th>
+		<th class="TagsBlock">#NightWorthy #Mellow #CruiseShipTycoon⚓</th>
+		</tr>
+		<tr class="TableContent">
+		<th><button class="IDBlock" onclick="copyToClipboard('1837284012')">1837284012</button></th>
+		<th class="NameBlock">Cloud Cruising</th>
+		<th class="TagsBlock">#NightWorthy #Atmospheric</th>
+		</tr>
+		<tr class="TableContent">
+		<th><button class="IDBlock" onclick="copyToClipboard('1839134008')">1839134008</button></th>
+		<th class="NameBlock">Love Cruise</th>
+		<th class="TagsBlock">#NightWorthy #Atmospheric</th>
+		</tr>
+		<tr class="TableContent">
+		<th><button class="IDBlock" onclick="copyToClipboard('1839175312')">1839175312</button></th>
+		<th class="NameBlock">Bahamas Beach</th>
+		<th class="TagsBlock">#NightWorthy #Tropical #Atmospheric</th>
+		</tr>
+		<tr class="TableContent">
+		<th><button class="IDBlock" onclick="copyToClipboard('1842965712')">1842965712</button></th>
+		<th class="NameBlock">Paradise Cities</th>
+		<th class="TagsBlock">#NightWorthy #Atmospheric #Vocals</th>
+		</tr>
+		<tr class="TableContent">
+		<th><button class="IDBlock" onclick="copyToClipboard('1848038846')">1848038846</button></th>
+		<th class="NameBlock">Street Daze A</th>
+		<th class="TagsBlock">#NightWorthy #Atmospheric #SoftBeat</th>
+		</tr>
+		<tr class="TableContent">
+		<th><button class="IDBlock" onclick="copyToClipboard('9047963510')">9047963510</button></th>
+		<th class="NameBlock">Extinction</th>
+		<th class="TagsBlock">#NightWorthy #Vocals #Intense</th>
+		</tr>
+		<tr class="TableContent">
+		<th><button class="IDBlock" onclick="copyToClipboard('9045000139')">9045000139</button></th>
+		<th class="NameBlock">Gangster Cruise</th>
+		<th class="TagsBlock">#NightWorthy #SoftBeat</th>
+		</tr>
+
+		</table>
+
+		<!-- Footer -->
+
+		<br>
+		<br>
+		<br>
+
+		</div>
+
+		<div class="footer"><a href="#BeginingOfPage">
+		<p>Return to Top</p> </a></div>
+
+		<p>© 2022 Roblox Costa Cruises All rights reserved.</p>
+
+	<script>
+
+	function copyToClipboard(element) {
+		navigator.clipboard.writeText(element)
+	}
+
+	</script>
+
 
 </body>
 </html>
