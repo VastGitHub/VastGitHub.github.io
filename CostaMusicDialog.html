@@ -72,10 +72,14 @@ box-shadow: 0 0 15px rgba(255,0,50,.75);
           }
           
         .footer {
-          padding: 15px;
+          padding: 5px;
           text-align: center;
           background: #373737;
           opacity: 1;
+          border-radius: 8px;
+          transition: 0.4s;
+          width: 370px;
+          
 		}
           
          .footer:hover {
@@ -158,6 +162,14 @@ box-shadow: 0 0 15px rgba(255,0,50,.75);
             font-weight: bold;
         }
         
+/* Announcement Banner */  
+.AnnouncementBanner {
+background: rgba(255,255,255,0);
+padding: 0px;
+text-align:center;
+}
+
+        
 /* Table Configurations */  
 
 table {
@@ -184,7 +196,15 @@ border-width: 2px;
 border-color: rgba(255,255,255,.5);
 font-weight: 600;
 padding: 5px;
+transition: 0.2s;
 }
+
+.IDBlock:Hover {
+background: rgba(100,100,100,1);
+border-color: rgba(255,255,255,.75);
+box-shadow: 0 0 15px rgba(100,100,100,.7);
+}
+
 
 .NameBlock {
 font-weight: 500;
@@ -236,8 +256,16 @@ text-align: left;
         </style>
     </head>
     <body>
+
+<!-- Important Announcement Banner -->
+<div id="BeginingOfPage"></div>
+
+<p class="AnnouncementBanner"><b>[BETA STATE]</b> This site is currently in a BETA state, expect bugs/blanks. Contact @Vast#4617 if any issues occur.</p>
+
+
+<!-- Header -->
 <div class="header">
-  		<a id="BeginingOfPage"><img class="CostaLogo" alt="Costa Cruises Logo" src="https://lh3.googleusercontent.com/BzUlkJtWhUypx4uQWhSq9VSjZFTjTPEDZrIWHnIbh2_w2vT-bLQR3MkyomH6I0vzESic6A2sFu3r0E-EWzx8vvmOxQIFFwawph_MiCffpG1gRIgZmtpbHo_BQwcHf7TKnjqHEx2XnA=w2400"><alt="Costa Cruises Logo"></a>
+  		<a><img class="CostaLogo" alt="Costa Cruises Logo" src="https://lh3.googleusercontent.com/BzUlkJtWhUypx4uQWhSq9VSjZFTjTPEDZrIWHnIbh2_w2vT-bLQR3MkyomH6I0vzESic6A2sFu3r0E-EWzx8vvmOxQIFFwawph_MiCffpG1gRIgZmtpbHo_BQwcHf7TKnjqHEx2XnA=w2400"><alt="Costa Cruises Logo"></a>
       
 <div class="FontColorWhite">
   
@@ -352,11 +380,11 @@ text-align: left;
   </tr>
 </table>
 
-
+<br>
+<hr class="Divider">
+<br>
 
 <!-- Upbeat Audios  -->
-
-        <br><br>
         
         <h3 class="Genre"><b>"UPBEAT"</b> AUDIOS</h3>
         <p>Party-worthy, hype, intense songs. <b>Monstercat🐱 found here.</b>
@@ -425,10 +453,38 @@ text-align: left;
 
 </table>
 
+<br>
+<hr class="Divider">
+<br>
+
+<!-- Dining Audios  -->
+        
+        <h3 class="Genre"><b>"DINING"</b> AUDIOS</h3>
+        <p>Slow, jazzy, soft dining songs.
+        </p>
+
+<table>
+
+<!-- Table Header -->
+  <tr class="TableHeader">
+     <th>SONG ID</th>
+     <th>NAME</th>
+     <th>TAGS</th>
+  </tr>
+
+<!--Night Time Values -->
+  <tr class="TableContent">
+     <th class="IDBlock">9045467859</th>
+     <th class="NameBlock">Cruising (a)</th>
+     <th class="TagsBlock">#Dining #Jazz</th>
+  </tr>
+</table>
+
+<br>
+<hr class="Divider">
+<br>
 
 <!-- Night Audios  -->
-
-        <br><br>
         
         <h3 class="Genre"><b>"NIGHT"</b> AUDIOS</h3>
         <p>Slow, jazzy, atmospheric songs.
@@ -484,6 +540,16 @@ text-align: left;
      <th class="NameBlock">Street Daze A</th>
      <th class="TagsBlock">#NightWorthy #Atmospheric #SoftBeat</th>
   </tr>
+  <tr class="TableContent">
+     <th class="IDBlock">9047963510</th>
+     <th class="NameBlock">Extinction</th>
+     <th class="TagsBlock">#NightWorthy #Vocals #Intense</th>
+  </tr>
+  <tr class="TableContent">
+     <th class="IDBlock">9045000139</th>
+     <th class="NameBlock">Gangster Cruise</th>
+     <th class="TagsBlock">#NightWorthy #SoftBeat</th>
+  </tr>
 
 </table>
     
@@ -496,9 +562,9 @@ text-align: left;
 </div>
 
 <div class="footer"><a href="#BeginingOfPage">
-    <p>Return to Top</p>
+    <p>Return to Top</p> </a></div>
 
-  </a></div>
+<p>© 2022 Roblox Costa Cruises All rights reserved.</p>
 
 </body>
 </html>
